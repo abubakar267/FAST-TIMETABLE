@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timetable</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Timetable Filter</h2>
+
+<div class="filter-container">
+    <!-- Section input -->
+    <label for="section">Enter Section (e.g., BCS-5A):</label>
+    <input type="text" id="section" placeholder="Enter section...">
+
+    <!-- Day buttons -->
+    <div id="day-buttons">
+        <button class="day-button" onclick="setDay('ALL')">ALL</button>
+        <button class="day-button" onclick="setDay('MONDAY')">Monday</button>
+        <button class="day-button" onclick="setDay('TUESDAY')">Tuesday</button>
+        <button class="day-button" onclick="setDay('WEDNESDAY')">Wednesday</button>
+        <button class="day-button" onclick="setDay('THURSDAY')">Thursday</button>
+        <button class="day-button" onclick="setDay('FRIDAY')">Friday</button>
+    </div>
+</div>
+
+<!-- Timetable display -->
+
+<div id="timetable" class="hidden"></div>
+
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
